@@ -1,15 +1,34 @@
-# mark
+# example files for mark - use md files for gpt
 This folder shows examples of using **mark**.  
 See github: [mark](https://github.com/relston/mark)
-
-## call mark
-1. write your prompt into a md file
-2. call mark ./path-to.md
 
 ## install mark
 ```
 pipx install git+https://github.com/relston/mark.git
 ```
+
+
+## call mark
+write your prompt into a md file, then
+```
+mark ./path-to.md 
+```  
+    
+write a system prompt: 
+```
+~/.mark/system_prompts/custom.md
+```
+  
+use it:
+```
+mark path/to/markdown.md --system custom
+```
+
+and finally, create picture:
+```
+mark path/to/markdown.md --generate-image
+``` 
+
 
 ## transforming docx and others to md
 
